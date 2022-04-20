@@ -8,7 +8,7 @@ fig1 = px.bar(data_frame=most_viewed_ted_talk,y='title',x='views',orientation='h
               color_discrete_sequence=['red'],template='simple_white')
 fig1.update_layout(
     autosize=True,
-    title ={'text': "<b style:'color:black;'>25 najczęściej oglądanych ted talks </b>", 'font': {'size': 30}},title_x=0.6,
+    title ={'text': "<b style:'color:black;'>Top 25 najczęściej oglądanych ted talks </b>", 'font': {'size': 30}},title_x=0.6,
 
     title_font_family="Times New Roman",
     title_font_color="black",

@@ -6,7 +6,7 @@ df=pd.read_csv('..\\ted-talks-dataset/data.csv')
 liked_speaker=df.groupby(['author']).sum()
 likes=liked_speaker.sort_values(by ='likes',ascending=True).tail(10)
 
-fig4 = px.bar(data_frame=likes,y=likes.index,x='likes',orientation='h', width=700, height=600,
+fig4 = px.bar(data_frame=likes,y='likes',x=likes.index,orientation='v', width=700, height=600,
               color_discrete_sequence=['green'],template='simple_white')
 fig4.update_layout(
     autosize=True,
